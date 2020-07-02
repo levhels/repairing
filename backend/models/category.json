@@ -1,0 +1,32 @@
+[
+    {
+        "categoryname":"Проектные работы",
+        "description":"Проектные работы",
+        "parent":0
+    },
+    {
+        "categoryname":"Демонтажные работы",
+        "description":"Демонтажные работы",
+        "parent":0
+    },
+    {
+        "categoryname":"Проектные работы",
+        "description":"Проектные работы",
+        "parent":0
+    },
+    {
+        "categoryname":"Демонтаж потолков",
+        "description":"Демонтаж потолков",
+        "parent":0
+    },
+    {
+        "categoryname":"Демонтаж стен",
+        "description":"Демонтаж стен",
+        "parent":0
+    },
+    {
+        "categoryname":"Демонтаж пола",
+        "description":"Демонтаж пола",
+        "parent":0
+    }
+]
