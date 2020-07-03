@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645e5"
+  },
+  "categoryname": "Проектные работы",
+  "description": "Проектные работы",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645e6"
+  },
+  "categoryname": "Демонтажные работы",
+  "description": "Демонтажные работы",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645e7"
+  },
+  "categoryname": "Демонтаж электрики, вентиляции, кондиционирования",
+  "description": "Демонтаж электрики, вентиляции, кондиционирования",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645e8"
+  },
+  "categoryname": "Демонтаж потолков",
+  "description": "Демонтаж потолков",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645e9"
+  },
+  "categoryname": "Демонтаж стен",
+  "description": "Демонтаж стен",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ede7af742c37a46343645ea"
+  },
+  "categoryname": "Демонтаж пола",
+  "description": "Демонтаж пола",
+  "parent": 0
+},{
+  "_id": {
+    "$oid": "5ee117c139b54815200ce0c2"
+  },
+  "categoryname": "Электромонтажные работы",
+  "description": "Электромонтажные работы",
+  "parent": 0
+}]

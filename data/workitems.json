@@ -1,0 +1,173 @@
+[{
+  "_id": {
+    "$oid": "5ed694b5594205e06932148b"
+  },
+  "workname": "штробление",
+  "description": "Создание каналов в стенах для прокладки кабелей.",
+  "category": "бетон",
+  "unit": "м"
+},{
+  "_id": {
+    "$oid": "5ed6952a594205e06932148c"
+  },
+  "workname": "штробление",
+  "description": "Создание каналов в стенах для прокладки кабелей.",
+  "category": "бетон",
+  "unit": "м"
+},{
+  "_id": {
+    "$oid": "5ed6952d594205e06932148d"
+  },
+  "workname": "штробление",
+  "description": "Создание каналов в стенах для прокладки кабелей.",
+  "category": "бетон",
+  "unit": "м"
+},{
+  "_id": {
+    "$oid": "5ed6952f594205e06932148e"
+  },
+  "workname": "штробление",
+  "description": "Создание каналов в стенах для прокладки кабелей.",
+  "category": "бетон",
+  "unit": "м"
+},{
+  "_id": {
+    "$oid": "5ed923f5aafca5379c4d7283"
+  },
+  "workname": "Монтаж раковины ",
+  "description": "Монтаж раковины.",
+  "category": "Водоснабжение и канализация",
+  "unit": "штука"
+},{
+  "_id": {
+    "$oid": "5ede744887978841b05f2a6d"
+  },
+  "workname": "Монтаж раковины 123",
+  "description": "Монтаж раковины.",
+  "category": "Водоснабжение и канализация",
+  "unit": "штука"
+},{
+  "_id": {
+    "$oid": "5ede749b87978841b05f2a6e"
+  },
+  "workname": "Монтаж раковины 1234",
+  "description": "Монтаж раковины.",
+  "category": "Водоснабжение и канализация",
+  "unit": "штука"
+},{
+  "_id": {
+    "$oid": "5ee50427baffb900e8953355"
+  },
+  "workname": "sdasd",
+  "description": "sdsadas",
+  "category": "",
+  "unit": ""
+},{
+  "_id": {
+    "$oid": "5ee5043cbaffb900e8953356"
+  }
+},{
+  "_id": {
+    "$oid": "5ee50471baffb900e8953357"
+  },
+  "workname": "vvvv",
+  "description": "vvvv",
+  "category": "Демонтажные работы",
+  "unit": "м2"
+},{
+  "_id": {
+    "$oid": "5ee504d4e059d32c08d18b32"
+  }
+},{
+  "_id": {
+    "$oid": "5ee504dfe059d32c08d18b33"
+  },
+  "workname": "vvvvoooo"
+},{
+  "_id": {
+    "$oid": "5ee504f2e059d32c08d18b34"
+  },
+  "description": "dsadsads",
+  "category": "Демонтаж электрики, вентиляции, кондиционирования",
+  "unit": "м.пог."
+},{
+  "_id": {
+    "$oid": "5ee50811e059d32c08d18b35"
+  },
+  "workname": "test1",
+  "description": "test1",
+  "category": "Демонтажные работы",
+  "unit": "ведро"
+},{
+  "_id": {
+    "$oid": "5ee5095de059d32c08d18b36"
+  },
+  "workname": "Покраска стен",
+  "description": "jjj",
+  "category": "",
+  "unit": ""
+},{
+  "_id": {
+    "$oid": "5ee50a37e059d32c08d18b37"
+  },
+  "workname": "Покраска стен",
+  "description": "sas",
+  "category": "Демонтажные работы",
+  "unit": "ведро"
+},{
+  "_id": {
+    "$oid": "5ee50c28e059d32c08d18b38"
+  },
+  "workname": "Покраска стен",
+  "description": "cxx",
+  "category": "Демонтажные работы",
+  "unit": "ведро"
+},{
+  "_id": {
+    "$oid": "5ee50e4fe059d32c08d18b39"
+  },
+  "workname": "Покраска стен",
+  "description": "adsadd",
+  "category": "",
+  "unit": ""
+},{
+  "_id": {
+    "$oid": "5ee510eee059d32c08d18b3a"
+  },
+  "workname": "test3",
+  "description": "test3",
+  "category": "5",
+  "unit": "4"
+},{
+  "_id": {
+    "$oid": "5ee51197e059d32c08d18b3b"
+  },
+  "workname": "Монатж УЗО однофазного с подключением",
+  "description": "Монатж УЗО однофазного с подключением",
+  "category": "6",
+  "unit": "0"
+},{
+  "_id": {
+    "$oid": "5eeb967cd181c73ff0d3a580"
+  },
+  "workname": "Установка прибора учёта электроэнергии (трёхфазный счётчик) с подключением",
+  "description": "Установка прибора учёта электроэнергии (трёхфазный счётчик) с подключением",
+  "category": "6",
+  "unit": "0"
+},{
+  "_id": {
+    "$oid": "5eeb98c4d181c73ff0d3a581"
+  },
+  "workname": "ывфывф",
+  "description": "ввфыв",
+  "category": "1",
+  "unit": "1"
+},{
+  "_id": {
+    "$oid": "5eeb9a92d181c73ff0d3a582"
+  },
+  "workname": "dadads",
+  "description": "asds",
+  "category": "Демонтажные работы",
+  "unit": "м2"
+}]
