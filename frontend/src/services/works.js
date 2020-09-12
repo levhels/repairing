@@ -48,7 +48,27 @@ export class WorksService {
         console.log("будут отправлены",item); 
         fetch("/works", postObject).then((response) => {
             if(response.ok) {
-                console.log("данные добавлены")
+                console.log("данные добавлены")                
+            } else {
+                console.log("Response not ok. Status:"+response.status)
+            }
+        }).catch((error) => {
+            console.log(error);
+        });       
+    }
+
+    editWorkItem = item => {
+        let postObject = {
+            method: "PUT",
+            mode: "cors",
+            credentials:"include",
+            headers: {"Content-Type":"application/json"},
+            body:JSON.stringify(item)
+        }
+        console.log("будут перезаписаны",item); 
+        fetch("/works", postObject).then((response) => {
+            if(response.ok) {
+                console.log("данные сохранены")                
             } else {
                 console.log("Response not ok. Status:"+response.status)
             }
@@ -64,9 +84,11 @@ export class WorksService {
               credentials:"include",
               headers:{"Content-Type":"application/json"}
         }
+        console.log("servise-delete", id.target)
         fetch("/works/"+id,deleteObject).then((response) => {
           if(response.ok) {
             console.log("запись удалена")
+            
           } else {
               console.log("Response not ok. Status:"+response.status)
           }

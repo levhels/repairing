@@ -74,23 +74,39 @@ class MyForm extends React.Component {
             }       
         }) 
         this.props.service.addWorkItem(form); 
+        this.getWorks();
         //console.log("state", this.state);
+    }
+
+    changeForm = (item) => {
+        console.log("changeForm", item)
+        this.setState({
+            "form": {
+                "workname": item.workname,
+                "description": item.description,
+                "category": item.category,
+                "unit": item.unit,
+                "price": item.price
+            }
+        }
+            
+        )
     }
 
     render() {
 
         const unitList = this.state.unitList;
         const units = unitList.map((item, index) => {
-            if (item.unitname) {
+            
                 return <option key={index} value={item.unitname}>{item.unitname}</option>}
-            }
+            
         )
 
         const categoryList = this.state.categoryList;
         const categories = categoryList.map((item, index) => {
-            if (item.categoryname) {
+            
                 return <option key={index} value={item.categoryname}>{item.categoryname}</option>}
-            }
+            
         )
             return <>
             <Form>
@@ -131,6 +147,8 @@ class MyForm extends React.Component {
         <Table list={this.state.list} 
                      unit={this.state.unitList}
                      removeWorkItem = {this.props.service.removeWorkItem}
+                     getWorks = {this.getWorks}
+                     changeForm = {this.changeForm}
 
         />
         </>
