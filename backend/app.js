@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const workItem = require("./models/workitem");
 const unitItem = require("./models/unititem");
 const categoryItem = require("./models/categoryitem");
+const workitem = require("./models/workitem");
 
 let app = express();
 
@@ -49,6 +50,34 @@ app.post("/works", function(req,res) {
 		}
 		return res.status(200).json({"message":"success"});
 	})
+});
+
+app.put("/works/:workId", function(req,res) {
+
+	console.log(req.body._id)
+	let item = {
+		workname:req.body.workname,
+		description:req.body.description,
+		category:req.body.category,
+		unit:req.body.unit,
+		price:req.body.price
+
+	}
+	//console.log(item)
+	workItem.findOne({"_id":req.body._id})
+		.then((response) => {
+			console.log(response)
+			workI++
+			
+			+
+			tem.updateOne({"_id":req.body._id},item,function(err) {
+				if(err) {
+					return res.status(409).json({"message":"item is not updated"})
+				}
+				return res.status(200).json({"message":"success"});
+			})
+		})
+	/**/
 
 });
 
