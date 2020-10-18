@@ -67,10 +67,7 @@ app.put("/works/:workId", function(req,res) {
 	workItem.findOne({"_id":req.body._id})
 		.then((response) => {
 			console.log(response)
-			workI++
-			
-			+
-			tem.updateOne({"_id":req.body._id},item,function(err) {
+			workItem.updateOne({"_id":req.body._id},item,function(err) {
 				if(err) {
 					return res.status(409).json({"message":"item is not updated"})
 				}

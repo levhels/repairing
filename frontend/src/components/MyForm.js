@@ -18,7 +18,8 @@ class MyForm extends React.Component {
             },            
             list: [], 
             unitList: [],
-            categoryList: []
+            categoryList: [],
+            showUpdateButton: false
         };               
     }   
 
@@ -141,6 +142,8 @@ class MyForm extends React.Component {
                 </Form.Group>
 
                 <Button onClick={this.addListItem} variant="primary">Добавить</Button>
+                <Button onClick={this.addListItem} variant="primary" 
+                    { this.state.showUpdateButton ? "disabled" : null }>Обновить</Button>
             </Form>
 
 
