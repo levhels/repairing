@@ -79,6 +79,28 @@ class MyForm extends React.Component {
         //console.log("state", this.state);
     }
 
+    updateListItem = (event) => {
+        event.preventDefault();
+        //console.log("Строчка отправлена", text);
+        var tempList = this.state.list;
+        var form = this.state.form
+        tempList.push(form);
+        this.setState({
+            list: tempList, 
+            form: {
+                "workname": "",
+                "description": "",
+                "category": 0,
+                "unit": 0,
+                "price": ""
+            }       
+        }) 
+        //this.props.service.addWorkItem(form); 
+        this.getWorks();
+        //console.log("state", this.state);
+    }
+
+
     changeForm = (item) => {
         console.log("changeForm", item)
         this.setState({
@@ -87,8 +109,11 @@ class MyForm extends React.Component {
                 "description": item.description,
                 "category": item.category,
                 "unit": item.unit,
-                "price": item.price
-            }
+                "price": item.price,
+                "_id": item._id
+            },
+            showUpdateButton: true
+
         }
             
         )
@@ -141,9 +166,9 @@ class MyForm extends React.Component {
                     <Form.Control type="text" name="price" onChange={(event) => this.changeHandler(event)} value={this.state.form.price} />
                 </Form.Group>
 
-                <Button onClick={this.addListItem} variant="primary">Добавить</Button>
+                <Button onClick={this.addListItem} variant="primary">Добавить</Button>{' '}
                 <Button onClick={this.addListItem} variant="primary" 
-                    { this.state.showUpdateButton ? "disabled" : null }>Обновить</Button>
+                   disabled={!this.state.showUpdateButton ? "disabled" : null}>Обновить</Button>
             </Form>
 
 
