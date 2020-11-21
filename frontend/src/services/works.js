@@ -66,7 +66,7 @@ export class WorksService {
             body:JSON.stringify(item)
         }
         console.log("будут перезаписаны",item); 
-        fetch("/works", postObject).then((response) => {
+        fetch("/works/"+item._id, postObject).then((response) => {
             if(response.ok) {
                 console.log("данные сохранены")                
             } else {

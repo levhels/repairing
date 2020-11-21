@@ -14,7 +14,7 @@ class MyForm extends React.Component {
                 "description": "",
                 "category": 0,
                 "unit": 0,
-                "price": ""
+                "price": 0
             },            
             list: [], 
             unitList: [],
@@ -61,9 +61,9 @@ class MyForm extends React.Component {
     addListItem = (event) => {
         event.preventDefault();
         //console.log("Строчка отправлена", text);
-        var tempList = this.state.list;
+        /*var tempList = this.state.list;*/
         var form = this.state.form
-        tempList.push(form);
+        /*tempList.push(form);
         this.setState({
             list: tempList, 
             form: {
@@ -73,7 +73,7 @@ class MyForm extends React.Component {
                 "unit": 0,
                 "price": ""
             }       
-        }) 
+        }) */ 
         this.props.service.addWorkItem(form); 
         this.getWorks();
         //console.log("state", this.state);
@@ -82,9 +82,9 @@ class MyForm extends React.Component {
     updateListItem = (event) => {
         event.preventDefault();
         //console.log("Строчка отправлена", text);
-        var tempList = this.state.list;
+        //var tempList = this.state.list;
         var form = this.state.form
-        tempList.push(form);
+        /*tempList.push(form);
         this.setState({
             list: tempList, 
             form: {
@@ -94,10 +94,11 @@ class MyForm extends React.Component {
                 "unit": 0,
                 "price": ""
             }       
-        }) 
-        //this.props.service.addWorkItem(form); 
+        }) */
+        this.props.service.editWorkItem(form); 
+        console.log("запись обновлена");
         this.getWorks();
-        //console.log("state", this.state);
+        console.log("компонент обновлен", this.state);
     }
 
 
@@ -138,36 +139,36 @@ class MyForm extends React.Component {
             <Form>
                 <Form.Group>
                     <Form.Label>Вид работ</Form.Label>
-                    <Form.Control onChange={(event) => this.changeHandler(event)} name="workname" type="text" placeholder="Покраска стен" value={this.state.form.workname} />
+                    <Form.Control onChange={this.changeHandler} name="workname" type="text" placeholder="Покраска стен" value={this.state.form.workname} />
                     
                 </Form.Group>                 
 
                 <Form.Group>
                     <Form.Label>Описание</Form.Label>
-                    <Form.Control as="textarea" rows="3" name="description" onChange={(event) => this.changeHandler(event)} value={this.state.form.description} />
+                    <Form.Control as="textarea" rows="3" name="description" onChange={this.changeHandler} value={this.state.form.description} />
                 </Form.Group>
 
                 <Form.Group>
                     <Form.Label>Категория</Form.Label>
-                    <Form.Control as="select" name="category" onChange={(event) => this.changeHandler(event)}  value={this.state.form.category}>
+                    <Form.Control as="select" name="category" onChange={this.changeHandler}  value={this.state.form.category}>
                         {categories}
                     </Form.Control>
                 </Form.Group>
                 
                 <Form.Group>
                     <Form.Label>Единицы измерения</Form.Label>
-                    <Form.Control as="select" name="unit" onChange={(event) => this.changeHandler(event)} value={this.state.form.unit}>
+                    <Form.Control as="select" name="unit" onChange={this.changeHandler} value={this.state.form.unit}>
                         {units}
                     </Form.Control>
                 </Form.Group>
 
                 <Form.Group>
                     <Form.Label>Базовая цена</Form.Label>
-                    <Form.Control type="text" name="price" onChange={(event) => this.changeHandler(event)} value={this.state.form.price} />
+                    <Form.Control type="text" name="price" onChange={this.changeHandler} value={this.state.form.price} />
                 </Form.Group>
 
                 <Button onClick={this.addListItem} variant="primary">Добавить</Button>{' '}
-                <Button onClick={this.addListItem} variant="primary" 
+                <Button onClick={this.updateListItem} variant="primary" 
                    disabled={!this.state.showUpdateButton ? "disabled" : null}>Обновить</Button>
             </Form>
 
